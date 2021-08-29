@@ -20,10 +20,10 @@
   align-items: center;
 }
 .face{
+  border: ridge 2px;
   width: 307px;
   height: 307px;
   border-radius: 50%;
-  background: burlywood;
 }
 
 .teme-h:hover{

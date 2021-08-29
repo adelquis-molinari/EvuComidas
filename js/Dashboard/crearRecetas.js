@@ -1,6 +1,7 @@
 let toDoItems = []
-
+let index = 1
 function ToDo (rt,dc,rd) {
+    this.id = index
     this.titulo = rt;
     this.discripcionCorta = dc;
     this.description = rd;
@@ -16,48 +17,27 @@ function addToDo() {
     resTitulo.value = ''
     descCorta.value = ''
     resDesc.value = ''
-    displayToDos()
+    buildToDo(todo)
 }
 
-function displayToDos() {
-    let toDoContainer = document.querySelector('#toDoContainer');
-    let array2 = buildToDos(toDoItems);
-    array2.forEach(function(e){
-        toDoContainer.appendChild(e)
-    })
-}
-
-
-function buildToDos(toDos) {
-    let array = toDos.map((x,i)=>{
-        return buildToDo(x,i)
-    })
-    return array
-}
-function buildToDo(todo, index) {
-    let toDoShell = document.createElement('div');
-    toDoShell.appendChild(`
+function buildToDo(todo) {
+    $('#toDoContainer').append(`
     <tr>
-        <th scope="row">${index}</th>
+        <th scope="row">
+            <i class="far fa-eye"></i>
+        </th>
         <td>${todo.titulo}</td>
-        <td>${todo.descriptionCorta}</td>
+        <td>${todo.discripcionCorta}</td>
         <td>${todo.estado}</td>
-        <th class="text-break align-content-center"><button type="button" class="btn btn-outline-danger" id='eliminarIten'>X</button></th>
+        <th class="text-break align-content-center"><button type="button" class="btn btn-outline-danger" id='eliminarToDo'>X</button></th>
     </tr>
     `);
-    // toDoShell.classList.add('toDoShell');
-    // let toDoText = document.createElement('span');
-    // toDoText.innerHTML = todo.description;
-    // toDoText.id = index;
-    // toDoText.onclick = completeToDo
-    // if (todo.complete === true) {
-    //     toDoText.className = 'completeText';
-    // };
-    
-    return toDoShell
+    index++
+    resetaOk()
 }
-
-
 
 $('#recetaSuccess').click(()=>addToDo())
 
+$('#eliminarToDo').click((e)=>{
+    e.target.parentNode.parentNode.remove()
+})
