@@ -13,15 +13,30 @@
   flex-direction: row;
 }
 
-
-
 .lateral{
+  display: flex;
   height: 100vh;
-  padding-top: 150px;
+  padding-top: 50px;
+  align-items: center;
+}
+.face{
+  width: 307px;
+  height: 307px;
+  border-radius: 50%;
+  background: burlywood;
 }
 
+.teme-h:hover{
+  transform: scale(1.03);
+  transition: 0.2s;
+  cursor: pointer;
+}
 
-
+@media (min-width: 990px) {
+  .lateral{
+    height: 40vh;
+  }
+}
 
 
 @media (min-width: 1025px) {

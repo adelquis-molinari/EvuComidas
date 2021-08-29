@@ -1,1 +1,0 @@
-pedirImg('people dinner',5)

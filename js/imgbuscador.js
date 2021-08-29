@@ -10,3 +10,4 @@ const imgBusqueda =(data,i)=>{
         <img src="${data.results[i].urls.full}" alt="${data.results[i].alt_description}" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
     `)
 }
+pedirImg('people dinner',5)
