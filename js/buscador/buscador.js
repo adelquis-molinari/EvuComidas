@@ -26,7 +26,7 @@ requiereApi =(e)=>{
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">${title}</h5>
-                    <a href="${link}" class="btn btn-primary" target=black>A cocinar!!!</a>
+                    <a href="${link}" class="btn btn-outline-success" target=black>A cocinar!!!</a>
                 </div>
             </div>
         </div>

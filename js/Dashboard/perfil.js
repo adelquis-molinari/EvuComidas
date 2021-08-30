@@ -41,9 +41,10 @@ const cambiosPerfil =(data)=>{
     <h5>Código postal</h5>
     <p class="text-secondary">${data[0].postal}</p>
 
-    <button type="submit" class="col-1 btn btn-success text-center" id="editarPerfil">Editar</button>
+    <button type="submit" class="col-1 btn btn-success text-center" id="editProfile">Editar</button>
     `)
     perfilLateral(data)
+    ocultarDatos()
     alertOk()
 }
 const perfilLateral =(data)=>{
@@ -61,3 +62,17 @@ $('#imgPerfil').change((e)=>{
     <img src="${img}" class="face" alt="usuario por defecto">
     `);
 })
+
+const ocultarDatos =()=>{
+    let forms = document.querySelector('#formContent');
+    forms.className = 'ocultarPerfil'
+    $('#editProfile').click(()=>{
+        $('#formContent').removeClass("ocultarPerfil")
+        let data = document.querySelector('#perfilFijo');
+        data.innerHTML = ''
+    })
+}
+// $('#editProfile').click(()=>{
+//     alert('ok')
+//     $('#formContent').removeClass("ocultarPerfil")
+// })

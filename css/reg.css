@@ -50,6 +50,9 @@
   width: 150px;
   height: 150px;
 }
+.ocultarPerfil{
+  display: none;
+}
 @media (min-width: 990px) {
   .lateral{
     height: 40vh;
