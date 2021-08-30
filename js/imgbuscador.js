@@ -5,9 +5,8 @@ const pedirImg=(q,i)=>{
     })
 }
 const imgBusqueda =(data,i)=>{
-    console.log(data);
-    $('#banner').append(`
-        <img src="${data.results[i].urls.full}" alt="${data.results[i].alt_description}" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
+    $('#agregarImg').append(`
+        <img src="${data.results[i].urls.full}" alt="${data.results[i].alt_description}" class="w-100 vh-100" style="object-fit: cover; object-position: center;">
     `)
 }
 pedirImg('people dinner',5)

@@ -20,8 +20,9 @@ function addToDo() {
     buildToDo(todo)
 }
 
+
 function buildToDo(todo) {
-    $('#toDoContainer').append(`
+    const eToDo = $(`
     <tr>
         <th scope="row">
             <i class="far fa-eye"></i>
@@ -29,15 +30,15 @@ function buildToDo(todo) {
         <td>${todo.titulo}</td>
         <td>${todo.discripcionCorta}</td>
         <td>${todo.estado}</td>
-        <th class="text-break align-content-center"><button type="button" class="btn btn-outline-danger" id='eliminarToDo'>X</button></th>
+        <th class="text-break align-content-center"><button type="button" class="btn btn-outline-danger">X</button></th>
     </tr>
-    `);
+    `)
+    eToDo.on('click',(e)=>{
+        e.target.parentNode.parentNode.remove()
+    })
+    $('#toDoContainer').append(eToDo)
     index++
     resetaOk()
 }
 
 $('#recetaSuccess').click(()=>addToDo())
-
-$('#eliminarToDo').click((e)=>{
-    e.target.parentNode.parentNode.remove()
-})
