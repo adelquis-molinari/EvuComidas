@@ -21,7 +21,6 @@ $('#cambiosPerfil').click(()=>{
     let img = imgP;
     let persona = new Data(nombre.value, apellido.value, correo.value, direccion.value,ciudad.value, postal.value, img)
     array.push(persona)
-    console.log(array);
     cambiosPerfil(array)
 })
 
@@ -55,6 +54,7 @@ const perfilLateral =(data)=>{
     `);
 }
 $('#imgPerfil').change((e)=>{
+    console.log(e.target.files[0]);
     $('#fotoPerfil').empty()
     let img = URL.createObjectURL(e.target.files[0]);
     imgP = img
@@ -72,7 +72,3 @@ const ocultarDatos =()=>{
         data.innerHTML = ''
     })
 }
-// $('#editProfile').click(()=>{
-//     alert('ok')
-//     $('#formContent').removeClass("ocultarPerfil")
-// })

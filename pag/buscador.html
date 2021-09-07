@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../img/Evukerslogo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -43,10 +44,10 @@
   </nav>
     
   <div class="container p-5 border-bottom text-center">
-    <div class="row ">
-      <div class="cols-4">
-        <input class="col-11 w-75" type="text" id="buscar" placeholder="Que sabor buscas hoy ...">
-        <button id="search" class="col-1"><i  class="fas fa-search"></i></button>
+    <div class="row">
+      <div class="input-group mb-3 pt-4">
+        <input type="text" class="form-control" id="buscar" placeholder="Que sabor buscas hoy ..." aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-success" type="button" id="search"><i  class="fas fa-search"></i></button>
       </div>
     </div>
   </div>
@@ -56,14 +57,12 @@
     <div id="grid" class="row justify-content-center"></div>
   </div>
 
-
-<footer class="bg-gradient text-white text-center text-lg-start">
-        </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2021 Copyright:
-          <a class="text-white" href="#">Evukers</a>
-        </div>
-</footer>
+  <footer class="bg-dark text-white text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="btn btn-outline-light"  href="../pag/EvuKers.html" target="black">Evukers</a>
+    </div>
+  </footer>
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="../js/buscador/buscador.js"></script>
     <script src="../js/buscador/randomCard.js"></script>

@@ -33,5 +33,3 @@ const oops =()=>{
         text: 'Uno de los campos esta vacio!',
     })
 }
-
-$('#success').click(()=> alertOk())

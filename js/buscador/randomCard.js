@@ -22,14 +22,14 @@ const busqueda =(data)=>{
     let title = data.hits[rd].recipe.label;
     let link = data.hits[rd].recipe.url;
     $('#grid').append(`
-    <div class="card col-12 col-md-6 col-lg-3 m-2">
+    <div class="card col-12 col-md-6 col-lg-3 m-2 cd-img">
     <div class="card-wrapper">
         <div class="card-box align-left mt-2">
             <img class="card-img-top" src="${img}" alt="${imgAlt}">
         </div>
         <div class="card-body">
             <h5 class="card-title">${title}</h5>
-            <a href="${link}" class="btn btn-primary" target=black>Acocinar!!!</a>
+            <a href="${link}" class="btn btn-outline-success" target=black>Acocinar!!!</a>
             </div>
         </div>
     </div>

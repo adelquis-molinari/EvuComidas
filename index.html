@@ -13,56 +13,50 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>EvuComidas</title>
 </head>
-<body>
-    <nav class="navbar navbar-light bg-light fixed-top">
-        <div class="container-fluid">
+<body class="bg-light">
+  <nav class="navbar navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="./img/Evukerslogo.png" alt="" width="" height="24" class="d-inline-block align-text-top">
+              EvuComidas
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./img/Evukerslogo.png" alt="" width="" height="24" class="d-inline-block align-text-top">
-                EvuComidas
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                  <img src="./img/Evukerslogo.png" alt="" width="" height="24" class="d-inline-block align-text-top">
-                  EvuComidas
-                </a>
-              </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item p-4">
-                    <button type="button" class="btn btn-outline-success"><a class="nav-link" href="./pag/buscador.html">Buscador</a></button>
-                </li>
-                <li class="nav-item p-4">
-                    <button type="button" class="btn btn-outline-success"><a class="nav-link" href="./pag/Dashboard.html">Registrate</a></button>
-                </li>
-              </ul>
-            </div>
+              <img src="./img/Evukerslogo.png" alt="" width="" height="24" class="d-inline-block align-text-top">EvuComidas
+            </a>
           </div>
-        </div>
-      </nav>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" height="400px">
-          <div class="carousel-item  active">
-            <img src="./img/frederick-medina-IsQ7gTgZzMQ-unsplash.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/jonathan-borba-KSAThuJ9mjs-unsplash.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/leo-roza--PyQXB6thwU-unsplash.jpg" class="d-block w-100" alt="...">
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item p-4">
+                <button type="button" class="btn btn-outline-success"><a class="nav-link" href="./pag/buscador.html">Buscador</a></button>
+              </li>
+              <li class="nav-item p-4">
+                <button type="button" class="btn btn-outline-success"><a class="nav-link" href="./pag/Dashboard.html">Registrate</a></button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <footer class="bg-dark text-white text-center text-lg-start">
+  </nav>
+  <div class="container">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner text-right" id="carousel">
+          <h1 class="display-1">EvuComidas</h1>
+        </div>
+      </div>
     </div>
+  </div>
+  <footer class="bg-dark text-white text-center text-lg-start">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2021 Copyright:
-      <a class="text-white" href="#">Evukers</a>
+      <a class="btn btn-outline-light" href="./pag/EvuKers.html" target="black">Evukers</a>
     </div>
-</footer>
+  </footer>
+    <script src="./js/carruso/carrusel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

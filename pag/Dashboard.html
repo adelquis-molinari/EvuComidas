@@ -4,22 +4,24 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../img/Evukerslogo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="../css/reg.css">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/navMobile.css">
     <title>EvuComidas</title>
 </head>
-<body>
+<body class="bg_body">
     <section id='registroLigin' class="visible">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-6 text-black">
+            <div class="col-sm-6  text-black">
               <div class="px-5 ms-xl-4 row-cols-1 ">
-                <img src="../img/Evukerslogo.png" alt="evuComidas" class="logo fas fa-crow fa-2x me-3 pt-5 mt-xl-4">
-                <h1 class="fw-bold mb-0">EvuComidas</h1>
+                  <a href="../index.html"><img src="../img/Evukerslogo.png" alt="evuComidas" class="logo fas fa-crow fa-2x me-3 pt-5 mt-xl-4"></a>
+                  <a href="../index.html" class="a-link"><h1>EvuComidas</h1></a>
               </div>
               <div class="d-flex align-items-center h-custom-1 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-1">
                 <form style="width: 23rem;">
@@ -45,23 +47,27 @@
             </div>
           </div>
         </div>
-      </section>
+        </section>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 lateral ">
+            <div class="col-lg-2 col-sm-2 lateral">
                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <div class="p-lg-5" id="imgUser">
-                        <img src="../img/Usuario.png" alt="usuario por defecto" width="150px">
+                    <div class="ps-5 pb-5 align-content-center " id="imgUser">
+                        <img src="../img/Usuario.png" alt="usuario por defecto">
                     </div>
-                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Crear Recetas</button>
-                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mensajes</button>
-                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Perfil</button>
+                    <button class="nav-link active col-md-12" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Crear Recetas</button>
+                    <button class="nav-link col-md-12" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mensajes</button>
+                    <button class="nav-link col-md-12" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Perfil</button>
+                </div>
+                <div class="alg-ct">
+                    <a href="../index.html"><img src="../img/Evukerslogo.png" alt="evuComidas" class="logo fas fa-crow fa-2x me-3 pt-5 mt-xl-4"></a>
+                    <a href="../index.html" class='text-decoration-none tx-link text-black'>EvuComidas</a>
                 </div>
             </div>
             <div class="col-lg-9 p-lg-1 area">
                 <div class="tab-content pt-lg-5 px-lg-5" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <h2>Crear Recetas</h2>
+                        <h2 class='p-sm-2'>Crear Recetas</h2>
                         <div class="mb-3 pt-lg-5">
                             <label for="textTitle" class="form-label">Título</label>
                             <input type="text" class="form-control"  id="tituloReceta" required>
@@ -72,54 +78,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label" d>Tu receta Aquí</label>
-                            <textarea class="form-control" id="restDesc" rows="20" required></textarea>
+                            <textarea class="form-control" id="restDesc" rows="13" required></textarea>
                         </div>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                             <button class="btn btn-outline-success" type="submit" id="recetaSuccess">Enviar</button>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                        <h2>Perfil</h2>
-                        <div class="row" id="formContent">
-                            <div class="col-6">
-                                <form id="formPerfil">
-                                    <div class="row">
-                                        <div class="col">
-                                          <input type="text" class="form-control" placeholder="Nombre" id="nombrePerfil">
-                                        </div>
-                                        <div class="col">
-                                          <input type="text" class="form-control" placeholder="Apellido" id="apellidoPerfil">
-                                        </div>
-                                      </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputEmail4">Email</label>
-                                            <input type="email" class="form-control" id="correoPerfil" placeholder="Email" required>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputAddress">Dirección</label>
-                                        <input type="text" class="form-control" id="direccionPerfil" placeholder="1234 Buenavista">
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputCity">Ciudad</label>
-                                            <input type="text" class="form-control" id="ciudadPerfil">
-                                        </div>
-                                        <div class="form-group col-md-2">
-                                            <label for="inputZip">Codigo Postal</label>
-                                            <input type="text" class="form-control" id="postalPerfil">
-                                        </div>
-                                    </div>
-                                </form>
-                                <button type="submit" class="btn btn-success text-end" id="cambiosPerfil">Cambiar datos</button>
-                            </div>
-                                <div class="col-4">
-                                    <div class="face text-end mb-3" id="fotoPerfil"></div>
-                                    <input type="file" class="btn btn-outline-success" name="file" accept="image/*" name="file" placeholder="img" id="imgPerfil"></input>
-                                </div>
-                        </div>
-                        <div class="row" id="perfilFijo"></div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                         <h2>Mensajes</h2>
@@ -151,52 +114,66 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                        <h2>Temas</h2>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="card col-12 col-md-6 col-lg-3 m-2 teme-h">
-                                    <div class="card-wrapper">
-                                        <div class="card-box align-left mt-2">
-                                            <img class="card-img-top" src="../img/Evuca.png" alt="${imgAlt}" width="150px">
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <h2>Perfil</h2>
+                        <div class="row" id="formContent">
+                            <div class="col-8" >
+                                <form id="formPerfil">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Nombre" id="nombrePerfil">
                                         </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Teme Claro</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card col-12 col-md-6 col-lg-3 m-2 teme-h">
-                                    <div class="card-wrapper">
-                                        <div class="card-box align-left mt-2">
-                                            <img class="card-img-top" src="../img/Evuca.png" alt="${imgAlt}" width="150px">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Tema Oscuro</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Apellido" id="apellidoPerfil">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card col-12 col-md-6 col-lg-3 m-2 teme-h">
-                                    <div class="card-wrapper">
-                                        <div class="card-box align-left mt-2">
-                                            <img class="card-img-top" src="../img/Evuca.png" alt="${imgAlt}" width="150px">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Tema Retro</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Email</label>
+                                            <input type="email" class="form-control" id="correoPerfil" placeholder="Email" required>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="form-group">
+                                        <label for="inputAddress">Dirección</label>
+                                        <input type="text" class="form-control" id="direccionPerfil" placeholder="1234 Buenavista">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCity">Ciudad</label>
+                                            <input type="text" class="form-control" id="ciudadPerfil">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="inputZip">Codigo Postal</label>
+                                            <input type="text" class="form-control" id="postalPerfil">
+                                        </div>
+                                    </div>
+                                </form>
+                                <button type="submit" class="btn btn-success mt-3" id="cambiosPerfil">Cambiar datos</button>
+                            </div>
+                            <div class="col-4 m-auto">
+                                <div class="face text-end mb-3 face-out" id="fotoPerfil"></div>
+                                <input type="file" class="btn btn-outline-success" name="file" accept="image/*" name="file" placeholder="img" id="imgPerfil"></input>
                             </div>
                         </div>
+                        
+                        <div class="row" id="perfilFijo"></div>
                     </div>
+                   
                 </div>
                 
             </div>
 
         </div>
     </div>
+
+    <nav class="dp-oculto nav1  nav__mobile justify-content-center">
+        <div class="col-lg-3 ">
+            <div class="nav nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Crear Recetas</button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mensajes</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Perfil</button>
+            </div>
+        </div>
     <!-- Scripts -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/registro.js"></script>

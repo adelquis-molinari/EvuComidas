@@ -5,6 +5,10 @@
   background-position: right center;
   background-size: auto 100%;
 }
+.bg_body{
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%) ;
+  /* background-repeat: no-repeat; */
+}
 .logo{
   width: 70px;
 }
@@ -14,16 +18,30 @@
 }
 
 .lateral{
-  display: flex;
   height: 100vh;
   padding-top: 50px;
-  align-items: center;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  box-shadow: 8px 0px 36px -8px rgba(0,0,0,0.53);
+  -webkit-box-shadow: 8px 0px 36px -8px rgba(0,0,0,0.53);
+  -moz-box-shadow: 8px 0px 36px -8px rgba(0,0,0,0.53);
+}
+.alg-ct{
+  display: flex;
+  height: 480px;
+  align-items: flex-end;
+  /* background: aqua;; */
+}
+.a-link{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 .face{
-  border: ridge 2px;
   width: 307px;
   height: 307px;
   border-radius: 50%;
+  border: ridge 2px;
 }
 .visible{
   display: flex;
@@ -32,6 +50,7 @@
   height: 100%;
   background: whitesmoke;
   left: 0;
+  z-index: 15;
 }
 .oculto{
   display: flex;
@@ -53,14 +72,37 @@
 .ocultarPerfil{
   display: none;
 }
-@media (min-width: 990px) {
+.cd-img{
+  box-shadow: 1px 3px 32px 0px rgba(41,74,51,0.6);
+  -webkit-box-shadow: 1px 3px 32px 0px rgba(41,74,51,0.6);
+  -moz-box-shadow: 1px 3px 32px 0px rgba(41,74,51,0.6);
+}
+.cd-img:hover{
+  transform: scale(1.1);
+}
+#carousel h1{
+  position: absolute;
+  padding-left: 50px;
+  top: 200px;
+  z-index: 1;
+  color: #000000;
+  font-weight: 700;
+}
+
+.tx-link{
+  font-size: 30px;
+}
+@media (max-width: 990px) {
   .lateral{
-    height: 40vh;
+    display: none;
+  }
+  .face-out{
+    display: none;
   }
 }
 
 
-@media (min-width: 1025px) {
+@media (max-width: 1025px) {
   .h-custom-2 {
     height: 100%;
   }

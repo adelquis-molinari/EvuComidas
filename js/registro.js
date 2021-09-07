@@ -1,6 +1,3 @@
-// pedirImg('people dinner',5)
-
-
 $('#login').click(()=>{
     let nombre = document.querySelector('#name')
     let apellido = document.querySelector('#lastname')
