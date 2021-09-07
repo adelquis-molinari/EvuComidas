@@ -1,10 +1,5 @@
 const appId = '4d88b7c1';
 const appKey = 'bf5e67f2fb92fb6444349d37fb613ce8';
-const express = require('express');
-const cors = require('cors');
-const app = express();
-app.use(cors())
-
 $( "#buscar" ).keydown((e)=> {
     if (e.key === 'Enter') requiereApi();
 });
